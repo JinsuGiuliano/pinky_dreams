@@ -23,11 +23,6 @@
 		</div>
 	  </div>
 	  <a class="btn btn-ghost text-xl" href="/landing">Pinky Dreams <span class="font-thin">Studio</span></a>
-	  {#if isCourse}
-	  <a class="text-lg uppercase font-bold">
-		Academia Pinky Dreams
-	</a>
-	{/if}
 	</div>
 	
 	{#if !isCourse}

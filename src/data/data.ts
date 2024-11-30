@@ -1,104 +1,36 @@
 export const data = {
-    videos: {},
-}
+    hero: {
+        parr1: {
+            title: "Conviértete en una experta en el arte de las uñas",
+            description: "Aprende a tu ritmo con nuestro tutoriales paso a paso",
+            img:"/images/abigailMontero2.jpeg",
+        },
+        parr2: {
+            title: "¡Descubre el arte de la manicura y transforma tu pasión en una habilidad valiosa!",
+            description: `Participar en un curso de manicura te permitirá aprender técnicas profesionales, desde el cuidado de las uñas hasta la aplicación de diseños creativos.</br>
+            No solo mejorarás tu destreza, sino que abrirás las puertas a nuevas oportunidades laborales en un sector en constante crecimiento.</br>
+            Ya sea que quieras comenzar tu propio negocio o simplemente desees ofrecer un servicio excepcional a tus amigos y familiares, este curso es el primer paso hacia tu éxito.</br> 
+            ¡Inscríbete y dale un nuevo brillo a tu futuro!`,
+            img1: "/images/abigailMontero.jpeg",
+            img2: "/images/abigailMontero6.jpeg",
+        }
+    },
+    cursos: [
+        {
+            title: "Manicuría Combinada + Esmaltado Perfecto",
+            image: "/images/abigailMontero9.jpeg",
+            available: true,
+        },
+        {
+            title: "Sistema Soft Gel Próximamente",
+            image: "/images/abigailMontero10.jpeg",
+            available: false,
+        },
+        {
+            title: "Sistema Acrilico Próximamente",
+            image: "/images/abigailMontero6.jpeg",
+            available: false,
+        },
 
-export type videoT = {
-    id: number
-    title: string
-    description: string
-    iFrame: string
-    image: string
+    ]
 }
-
-export const videos:videoT[] = [
-    {
-        id: 1,
-        title: "Video 1",
-        description: "Description 1",
-        iFrame: `<iframe  src="https://www.youtube.com/embed/PA6w-wkKZkE?si=7PKS8gnQyV7jIdag" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    },
-    {
-        id: 2,
-        title: "Video 2",
-        description: "Description 2",
-        iFrame: `<iframe  src="https://www.youtube.com/embed/-oF7BOp1dj0?si=p1da4HBBTeBeKsds" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-    },
-    {
-        id: 3,
-        title: "Video 3",
-        description: "Description 3",
-        iFrame: `<iframe src="https://www.youtube.com/embed/PA6w-wkKZkE?si=7PKS8gnQyV7jIdag" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    },
-    {
-        id: 4,
-        title: "Video 4",
-        description: "Description 4",
-        iFrame: `<iframe src="https://www.youtube.com/embed/-oF7BOp1dj0?si=xYLW1h3OsIrJW_-5" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-    },
-    {
-        id: 5,
-        title: "Video 5",
-        description: "Description 5",
-        iFrame: `<iframe src="https://www.youtube.com/embed/PA6w-wkKZkE?si=7PKS8gnQyV7jIdag" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    },
-    {
-        id: 6,
-        title: "Video 6",
-        description: "Description 6",
-        iFrame: `<iframe src="https://www.youtube.com/embed/PA6w-wkKZkE?si=7PKS8gnQyV7jIdag" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-    },
-    {
-        id: 7,
-        title: "Video 7",
-        description: "Description 7",
-        iFrame: `<iframe src="https://www.youtube.com/embed/PA6w-wkKZkE?si=7PKS8gnQyV7jIdag" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    },
-    {
-        id: 8,
-        title: "Video 8",
-        description: "Description 8",
-        iFrame: `<iframe src="https://www.youtube.com/embed/PA6w-wkKZkE?si=7PKS8gnQyV7jIdag" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-    },
-    {
-        id: 9,
-        title: "Video 9",
-        description: "Description 9",
-        iFrame: `<iframe src="https://www.youtube.com/embed/PA6w-wkKZkE?si=7PKS8gnQyV7jIdag" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    },
-    {
-        id: 10,
-        title: "Video 10",
-        description: "Description 10",
-        iFrame: `<iframe src="https://www.youtube.com/embed/PA6w-wkKZkE?si=7PKS8gnQyV7jIdag" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-    },
-]
