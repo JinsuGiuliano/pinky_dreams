@@ -1,10 +1,12 @@
 <script>
+	import { goto } from "$app/navigation";
+
 
 	import { Icons } from "$lib/icons/icons";
 
 	export let isCourse = false
 </script>
-<div class="navbar bg-base-100 sticky top-0 z-40 ">
+<div class="navbar bg-base-100 fixed top-0 z-40 ">
 	<div class="navbar-start">
 	  <div class="dropdown">
 		<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -27,10 +29,15 @@
 	
 	{#if !isCourse}
 		<div class="navbar-end">
-		<a class="btn" href="/ingresar">
+		<div class="btn fixed bottom-2 lg:bottom-none lg:top-2 shadow-md" 
+		on:keypress
+		on:click={()=>{
+			goto("https://wa.link/t3vdb5")
+		  }}
+		>
 			{@html Icons.graduated("#63263B")}
-			Cursos 
-		</a>
+			Quiero Inscribirme 
+		</div>
 		</div>
 	{/if}
   </div>

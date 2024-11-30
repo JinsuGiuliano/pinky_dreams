@@ -1,26 +1,51 @@
-<script>
+<script lang="ts">
 	import { goto } from "$app/navigation";
-
-
 	import { data } from "../../../data/data";
+
+type cursoT = {
+    title: string;
+    image: string;
+    available: boolean;
+    description: string;
+}
+
+let showCurso: cursoT | null = null;
+
+
+  function showCursoModal(curso:cursoT){
+    showCurso = curso
+  }
 
 </script>
 <div class="hero bg-base-400 min-h-screen w-full">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img
+      alt="Abigail Montero"
       src="/images/abigailMontero2.jpeg"
-      class="max-w-md rounded-lg shadow-2xl" />
+      class="lg:max-w-lg rounded-lg shadow-xl" />
     <div>
-      <h1 class="text-5xl font-bold">{data.hero.parr1.title}</h1>
+      <h1 class="text-5xl font-bold">{@html data.hero.parr1.title}</h1>
       <p class="py-6">
         {@html data.hero.parr1.description}
       </p>
-      <button class="btn btn-primary" on:click={()=>{
-        goto("https://wa.link/t3vdb5")
-      }}>Quiero inscribirme</button>
     </div>
   </div>
 </div>
+
+<!-- <div class="py-20 min-h-screen w-full">
+  <div class='flex flex-col items-start justify-center'>
+      <a class="text-4xl px-6 uppercase font-thin">
+       Mis Creaciones
+    </a>
+  </div>
+  <div class="p-4 w-full">
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> 
+      {#each data.posts as post}
+            {@html post}
+      {/each}
+    </div>
+  </div>
+</div> -->
 
 <div class="hero bg-base-200 min-h-screen w-full">
   <div class="hero-content flex-col lg:flex-row">
@@ -38,29 +63,56 @@
   </div>
 </div>
 
+
+
 <div class="py-20 min-h-screen w-full">
   <div class='flex flex-col items-start justify-center'>
       <a class="text-4xl px-6 uppercase font-thin">
         Nuestros Cursos
     </a>
   </div>
-
   <div class="p-4 w-full">
     <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> 
       {#each data.cursos as curso}
-          <div class="card card-compact bg-base-100 max-w-sm shadow-xl">
-            <figure>
-                <img
-                  src={curso.image}
-                  alt="Album" /> 
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">{curso.title}</h2>
+            <div 
+            on:keypress            
+            on:click={()=>
+              curso.available &&
+              showCursoModal(curso)
+            }
+            class="card card-compact bg-base-100 max-w-sm shadow-xl {curso.available?"":"disabled grayscale"}">
+              <figure>
+                  <img
+                    src={curso.image}
+                    alt="Album" /> 
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">{curso.title}</h2>
+                </div>
               </div>
-            </div>
       {/each}
     </div>
   </div>
-  
-
 </div>
+
+
+{#if showCurso}
+  <div class="modal modal-open">
+    <div class="modal-box px-4">
+      <div class="modal-header">
+        <h2 class="text-2xl font-bold">{showCurso.title}</h2>
+        
+      </div>
+      <div class="modal-body">
+        <img
+          src={showCurso.image}
+          alt="Album" /> 
+        <p>{showCurso.description}</p>
+        <div class="flex items-center justify-between py-2">
+          <button class="btn" on:click={()=>showCurso = null}>Cerrar</button>
+          <button class="btn btn-primary" on:click={()=>goto("https://wa.link/t3vdb5")}>Quiero Inscribirme!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}

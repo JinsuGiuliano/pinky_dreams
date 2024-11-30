@@ -3,7 +3,7 @@
 
     export let video:videoT;
 </script>
-<div class="card card-compact bg-base-100 w-96 shadow-xl">
+<div class="card card-compact bg-base-100 w-full shadow-xl">
   <figure>
       <!-- <img
         src={video.image}
