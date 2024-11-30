@@ -27,7 +27,7 @@
           </div>
           <div class="form-control mt-6">
             <button class="btn btn-primary" 
-            on:click={()=>goto('/courses')}
+            on:click={()=>goto('/cursos')}
             >Ingresar</button>
           </div>
         </form>

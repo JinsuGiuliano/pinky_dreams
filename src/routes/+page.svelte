@@ -6,6 +6,9 @@
 	// import About from "./components/about.svelte";
 	import Hero from "./landing/components/hero.svelte";
 </script>
+
+
+
 <Navbar />
 <Hero/>
 <!-- <About/> -->

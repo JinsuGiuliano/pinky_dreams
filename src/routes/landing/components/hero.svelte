@@ -46,18 +46,18 @@
   </div>
 
   <div class="p-4 w-full">
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> 
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> 
       {#each data.cursos as curso}
-                <div class="card card-compact bg-base-100 max-w-sm shadow-xl">
-                  <figure>
-                      <img
-                        src={curso.image}
-                        alt="Album" /> 
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">{curso.title}</h2>
-                    </div>
-                  </div>
+          <div class="card card-compact bg-base-100 max-w-sm shadow-xl">
+            <figure>
+                <img
+                  src={curso.image}
+                  alt="Album" /> 
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">{curso.title}</h2>
+              </div>
+            </div>
       {/each}
     </div>
   </div>

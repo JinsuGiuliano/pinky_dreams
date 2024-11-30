@@ -4,7 +4,7 @@
 
 	export let isCourse = false
 </script>
-<div class="navbar bg-base-100 w-full sticky top-0 z-40 ">
+<div class="navbar bg-base-100 sticky top-0 z-40 ">
 	<div class="navbar-start">
 	  <div class="dropdown">
 		<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -22,12 +22,12 @@
 		  </svg>
 		</div>
 	  </div>
-	  <a class="btn btn-ghost text-xl" href="/landing">Pinky Dreams <span class="font-thin">Studio</span></a>
+	  <a class="btn btn-ghost text-xl" href="/">Pinky Dreams <span class="font-thin">Studio</span></a>
 	</div>
 	
 	{#if !isCourse}
 		<div class="navbar-end">
-		<a class="btn" href="/login">
+		<a class="btn" href="/ingresar">
 			{@html Icons.graduated("#63263B")}
 			Cursos 
 		</a>
