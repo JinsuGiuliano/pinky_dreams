@@ -28,8 +28,8 @@
 	{#if !isCourse}
 		<div class="navbar-end">
 		<a class="btn" href="/login">
-			{@html Icons.sun}
-			Academia Pinky Dreams 
+			{@html Icons.graduated("#63263B")}
+			Cursos 
 		</a>
 		</div>
 	{/if}

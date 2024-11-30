@@ -1,4 +1,4 @@
-<footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
+<footer class="footer footer-center bg-base-200 text-base-content rounded p-10 !w-full">
 	<nav class="grid grid-flow-col gap-4">
 	  <a class="link link-hover">About us</a>
 	  <a class="link link-hover">Contact</a>

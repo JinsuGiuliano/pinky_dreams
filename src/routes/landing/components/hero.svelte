@@ -5,7 +5,7 @@
 	import { data } from "../../../data/data";
 
 </script>
-<div class="hero bg-base-400 min-h-screen">
+<div class="hero bg-base-400 min-h-screen w-full">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img
       src="/images/abigailMontero2.jpeg"
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<div class="hero bg-base-200 min-h-screen">
+<div class="hero bg-base-200 min-h-screen w-full">
   <div class="hero-content flex-col lg:flex-row">
     <div class="flex flex-col">
       <img
@@ -38,14 +38,14 @@
   </div>
 </div>
 
-<div class="min-w-screen py-20 min-h-screen">
+<div class="py-20 min-h-screen w-full">
   <div class='flex flex-col items-start justify-center'>
       <a class="text-4xl px-6 uppercase font-thin">
         Nuestros Cursos
     </a>
   </div>
 
-  <div class="p-4">
+  <div class="p-4 w-full">
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> 
       {#each data.cursos as curso}
                 <div class="card card-compact bg-base-100 max-w-sm shadow-xl">
