@@ -12,13 +12,13 @@ export const data = {
             Ya sea que quieras comenzar tu propio negocio o simplemente desees ofrecer un servicio excepcional a tus amigos y familiares, este curso es el primer paso hacia tu éxito.</br> 
             ¡Inscríbete y dale un nuevo brillo a tu futuro!`,
             img1: "/images/abigailMontero.jpeg",
-            img2: "/images/abigailMontero6.jpeg",
+            img2: "/images/abigailMontero13.jpeg",
         }
     },
     cursos: [
         {
             title: "Manicuría Combinada + Esmaltado Perfecto",
-            image: "/images/abigailMontero9.jpeg",
+            image: "/images/abigailMontero14.jpeg",
             available: true,
             description: `En este curso aprenderás a realizar una manicura completa, desde el cuidado de las uñas hasta la aplicación de esmalte. Además, te enseñaremos a combinar diferentes técnicas para crear diseños únicos y originales. ¡Conviértete en una experta en el arte de las uñas!`,
         },
@@ -30,7 +30,7 @@ export const data = {
         },
         {
             title: "Sistema Acrilico (Próximamente)",
-            image: "/images/abigailMontero6.jpeg",
+            image: "/images/abigailMontero5.jpeg",
             available: false,
             description: `En este curso aprenderás a realizar una manicura completa, desde el cuidado de las uñas hasta la aplicación de esmalte. Además, te enseñaremos a combinar diferentes técnicas para crear diseños únicos y originales. ¡Conviértete en una experta en el arte de las uñas!`,
         },

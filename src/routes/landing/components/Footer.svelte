@@ -7,13 +7,10 @@
 	<nav>
 	  <div class="grid grid-flow-col gap-4">
 		<a href="https://www.instagram.com/dreams_pinky_/">
-			{@html Icons.twitter()}
+			{@html Icons.instagram()}
 		</a>
 		<a href="/">
 			{@html Icons.youtube()}	
-		</a>
-		<a href="/">
-			{@html Icons.facebook()}
 		</a>
 	  </div>
 	</nav>

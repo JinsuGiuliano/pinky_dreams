@@ -2,14 +2,14 @@
 	import { goto } from "$app/navigation";
 	import { data } from "../../../data/data";
 
-type cursoT = {
-    title: string;
-    image: string;
-    available: boolean;
-    description: string;
-}
+  type cursoT = {
+      title: string;
+      image: string;
+      available: boolean;
+      description: string;
+  }
 
-let showCurso: cursoT | null = null;
+  let showCurso: cursoT | null = null;
 
 
   function showCursoModal(curso:cursoT){
@@ -80,7 +80,7 @@ let showCurso: cursoT | null = null;
               curso.available &&
               showCursoModal(curso)
             }
-            class="card card-compact bg-base-100 max-w-sm shadow-xl {curso.available?"":"disabled grayscale"}">
+            class="cursor-pointer card card-compact bg-base-100 max-w-sm shadow-xl {curso.available?"":"disabled grayscale"}">
               <figure>
                   <img
                     src={curso.image}
