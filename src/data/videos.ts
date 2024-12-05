@@ -12,7 +12,7 @@ export type CategoriesT = {
     videos: videoT[]
 }
 
-const practicalVideos: videoT[] = [
+const theoryVideos: videoT[] = [
     {
         id: 1,
         title: "Material Teórico - Parte 1",
@@ -88,15 +88,31 @@ const elementsVideos: videoT[] = [
     }
 ]
 
+const practicalVideos: videoT[] = [
+    {
+        id: 1,
+        title: "Parte Práctica - Parte 1 ",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qUMM2Ty6VhQ?si=XzJKah9FGt7X9Qtl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    }
+]
+
 export const categories: CategoriesT[] = [
     {
         id: 1,
         title: "Material Teórico",
-        videos: practicalVideos
+        videos: theoryVideos
     },
     {
         id: 2,
         title: "Materiales y Productos",
         videos: elementsVideos
+    },
+    {
+        id: 3,
+        title: "Parte Práctica",
+        videos: practicalVideos
     }
 ]
