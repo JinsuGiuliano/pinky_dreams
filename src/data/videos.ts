@@ -52,17 +52,17 @@ const practicalVideos: videoT[] = [
 
 const elementsVideos: videoT[] = [
     {
-        id: 5,
-        title: "Ángulos de las fresas - Parte 5",
+        id: 1,
+        title: "Lista de materiales - Parte 1",
         description: "",
-        iFrame: `<iframe class="w-full" src="https://www.youtube-nocookie.com/embed/D9TUMJC2j-A?si=ZHpZ6eUXinWFOsLL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+        iFrame: `<iframe class="w-full" src="https://www.youtube-nocookie.com/embed/Irrj-Pi0LP4?si=KUcI95TeU-TBtZHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
     },
     {
-        id: 4,
-        title: "Uso del torno - Parte 4",
+        id: 2,
+        title: "Composición química de los productos - Parte 2",
         description: "",
-        iFrame: `<iframe class="w-full" src="https://www.youtube-nocookie.com/embed/07lM0Jtj34Y?si=6j5-muflXGabpZ9d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        iFrame: `<iframe class="w-full" src="https://www.youtube-nocookie.com/embed/n9ueYQms1ug?si=hc9-mnlxsT2u73w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
     },
     {
@@ -73,18 +73,18 @@ const elementsVideos: videoT[] = [
         image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
     },
     {
-        id: 2,
-        title: "Composición química de los productos - Parte 2",
+        id: 4,
+        title: "Uso del torno - Parte 4",
         description: "",
-        iFrame: `<iframe class="w-full" src="https://www.youtube-nocookie.com/embed/n9ueYQms1ug?si=hc9-mnlxsT2u73w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        iFrame: `<iframe class="w-full" src="https://www.youtube-nocookie.com/embed/07lM0Jtj34Y?si=6j5-muflXGabpZ9d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
     },
     {
-        id: 1,
-        title: "Lista de materiales - Parte 1",
+        id: 5,
+        title: "Ángulos de las fresas - Parte 5",
         description: "",
-        iFrame: `<iframe class="w-full" src="https://www.youtube-nocookie.com/embed/Irrj-Pi0LP4?si=KUcI95TeU-TBtZHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+        iFrame: `<iframe class="w-full" src="https://www.youtube-nocookie.com/embed/D9TUMJC2j-A?si=ZHpZ6eUXinWFOsLL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
     }
 ]
 

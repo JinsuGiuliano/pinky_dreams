@@ -3,14 +3,12 @@
     import { categories } from "../../../data/videos";
 
 </script>
-<div class="w-full px-2">
+<div class="w-full px-2 py-4">
     <div class='flex flex-col items-center justify-center'>
-        <a class="text-2xl uppercase font-bold">
-          Academia Pinky Dreams
+      <a class="text-2xl uppercase font-bold">
+        Academia Pinky Dreams
       </a>
     </div>
-
-  
         {#each categories as category}
             <div class="p-4">
                 <div class="divider divider-start text-xl font-bold uppercase">{category.title}</div>

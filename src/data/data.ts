@@ -18,19 +18,19 @@ export const data = {
     cursos: [
         {
             title: "Manicuría Combinada + Esmaltado Perfecto",
-            image: "/images/abigailMontero14.jpeg",
+            image: "/images/abigailMontero15.jpeg",
             available: true,
             description: `En este curso aprenderás a realizar una manicura completa, desde el cuidado de las uñas hasta la aplicación de esmalte. Además, te enseñaremos a combinar diferentes técnicas para crear diseños únicos y originales. ¡Conviértete en una experta en el arte de las uñas!`,
         },
         {
             title: "Sistema Soft Gel (Próximamente)",
-            image: "/images/abigailMontero10.jpeg",
+            image: "/images/abigailMontero17.jpeg",
             available: false,
             description: `En este curso aprenderás a realizar una manicura completa, desde el cuidado de las uñas hasta la aplicación de esmalte. Además, te enseñaremos a combinar diferentes técnicas para crear diseños únicos y originales. ¡Conviértete en una experta en el arte de las uñas!`,
         },
         {
             title: "Sistema Acrilico (Próximamente)",
-            image: "/images/abigailMontero5.jpeg",
+            image: "/images/abigailMontero16.jpeg",
             available: false,
             description: `En este curso aprenderás a realizar una manicura completa, desde el cuidado de las uñas hasta la aplicación de esmalte. Además, te enseñaremos a combinar diferentes técnicas para crear diseños únicos y originales. ¡Conviértete en una experta en el arte de las uñas!`,
         },
