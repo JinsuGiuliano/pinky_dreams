@@ -113,7 +113,7 @@
           </div>
         <div class="flex items-center justify-between pt-1 gap-1">
           <button class="btn rounded-md w-1/2" on:click={()=>showCurso = null}>volver</button>
-          <button class="btn btn-primary rounded-md  w-1/2" on:click={()=>goto("https://wa.link/t3vdb5")}>
+          <button class="btn btn-primary rounded-md  w-1/2" on:click={()=>goto(data.whatsappLink)}>
             <!-- {@html Icons.whatsapp("#63263B")} -->
             Quiero Inscribirme 
           </button>

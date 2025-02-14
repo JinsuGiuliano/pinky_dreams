@@ -1,4 +1,5 @@
 export const data = {
+    whatsappLink:'https://wa.link/g2772u',
     hero: {
         parr1: {
             title: "Conviértete en una experta </br>en el arte de las uñas",

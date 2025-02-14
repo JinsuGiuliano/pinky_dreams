@@ -3,6 +3,7 @@
 
 
 	import { Icons } from "$lib/icons/icons";
+	import { data } from "../../../data/data";
 
 	export let isCourse = false
 </script>
@@ -32,7 +33,7 @@
 		<div class="btn fixed bottom-2 lg:bottom-none lg:top-2 shadow-md" 
 		on:keypress
 		on:click={()=>{
-			goto("https://rb.gy/3kbaig")
+			goto(data.whatsappLink)
 		  }}
 		>
 			{@html Icons.whatsapp("#63263B")}
