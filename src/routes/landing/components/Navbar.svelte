@@ -32,10 +32,10 @@
 		<div class="btn fixed bottom-2 lg:bottom-none lg:top-2 shadow-md" 
 		on:keypress
 		on:click={()=>{
-			goto("https://wa.link/t3vdb5")
+			goto("https://rb.gy/3kbaig")
 		  }}
 		>
-			{@html Icons.graduated("#63263B")}
+			{@html Icons.whatsapp("#63263B")}
 			Quiero Inscribirme 
 		</div>
 		</div>

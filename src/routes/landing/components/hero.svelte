@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
+	import { Icons } from "$lib/icons/icons";
 	import { data } from "../../../data/data";
 
   type cursoT = {
@@ -10,7 +11,6 @@
   }
 
   let showCurso: cursoT | null = null;
-
 
   function showCursoModal(curso:cursoT){
     showCurso = curso
@@ -63,8 +63,6 @@
   </div>
 </div>
 
-
-
 <div class="py-20 min-h-screen w-full">
   <div class='flex flex-col items-start justify-center'>
       <a class="text-4xl px-6 uppercase font-thin">
@@ -98,19 +96,27 @@
 
 {#if showCurso}
   <div class="modal modal-open">
-    <div class="modal-box px-4">
-      <div class="modal-header">
-        <h2 class="text-2xl font-bold">{showCurso.title}</h2>
-        
+    <div class="modal-box px-0 py-0 rounded-xl">
+      <div class="modal-header">  
       </div>
       <div class="modal-body">
         <img
           src={showCurso.image}
           alt="Album" /> 
-        <p>{showCurso.description}</p>
-        <div class="flex items-center justify-between py-2">
-          <button class="btn" on:click={()=>showCurso = null}>Cerrar</button>
-          <button class="btn btn-primary" on:click={()=>goto("https://wa.link/t3vdb5")}>Quiero Inscribirme!</button>
+          <div class="flex justify-between">
+            <div class="w-full p-2">
+              <h2 class="text-2xl font-bold">{showCurso.title}</h2>
+            </div>
+          </div>
+          <div class="px-2 py-4">
+          <span>{@html showCurso.description}</span>
+          </div>
+        <div class="flex items-center justify-between pt-1 gap-1">
+          <button class="btn rounded-md w-1/2" on:click={()=>showCurso = null}>volver</button>
+          <button class="btn btn-primary rounded-md  w-1/2" on:click={()=>goto("https://wa.link/t3vdb5")}>
+            <!-- {@html Icons.whatsapp("#63263B")} -->
+            Quiero Inscribirme 
+          </button>
         </div>
       </div>
     </div>
