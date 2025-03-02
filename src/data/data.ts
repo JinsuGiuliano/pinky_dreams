@@ -78,7 +78,7 @@ Se seña con el  30%</span>`,
                 </span>`,
         },
         {
-            title: "Sistema Soft Gel (Kapping Gel) Online",
+            title: "Kapping en gel + Esmaltado Perfecto",
             image: "/images/curso_esmalte_semi.jpeg",
             available: true,
             description: `<span class="text-xs">Este curso está orientado a personas que quieran iniciar en el mundo de las uñas de manera segura y responsable.
