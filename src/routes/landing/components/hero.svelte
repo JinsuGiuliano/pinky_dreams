@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
+	import { Icons } from "$lib/icons/icons";
 	import { data } from "../../../data/data";
 
   type cursoT = {
@@ -55,21 +56,39 @@
   </div>
   <div class="p-4 w-full">
     <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> 
-      {#each data.cursos as curso}
+      {#each data.cursos as curso, i}
             <div 
-            on:keypress            
-            on:click={()=>
-              curso.available &&
-              showCursoModal(curso)
-            }
             class="cursor-pointer card card-compact bg-base-100 max-w-sm shadow-xl {curso.available?"":"disabled grayscale"}">
-              <figure>
+              <figure 
+              on:keypress            
+              on:click={()=>
+                curso.available &&
+                showCursoModal(curso)
+              }
+              >
                   <img
                     src={curso.image}
                     alt="Album" /> 
                 </figure>
                 <div class="card-body">
                   <h2 class="card-title">{curso.title}</h2>
+                  <div class="collapse bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion" />
+                    
+                      <div class="collapse-title font-semibold">
+                        <div class="flex items-center justify-start gap-2">
+                          + Más información del curso
+                          <div>
+                            {@html Icons.graduated("#000000")}
+                          </div>
+                        </div>
+                    </div>
+                    <div class="collapse-content text-sm py-0">{@html curso.description}</div>
+                   
+                  </div>
+                    <button class="btn btn-primary rounded-md  w-full" on:click={()=>window.open(data.whatsappLink, "_blank")}>
+                      Quiero Inscribirme 
+                    </button>
                 </div>
               </div>
       {/each}
