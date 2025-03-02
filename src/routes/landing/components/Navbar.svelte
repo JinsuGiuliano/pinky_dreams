@@ -6,6 +6,7 @@
 	import { data } from "../../../data/data";
 
 	export let isCourse = false
+	export let isProduct = false
 </script>
 <div class="navbar bg-base-100 fixed top-0 z-40 ">
 	<div class="navbar-start">
@@ -25,7 +26,7 @@
 		  </svg>
 		</div>
 	  </div>
-	  <a class="btn btn-ghost text-xl" href="/">Pinky Dreams <span class="font-thin">Studio</span></a>
+	  <a class="btn btn-ghost text-xl" href="/">Pinky Dreams <span class="font-thin">{isProduct?"Insumos":"Studio"}</span></a>
 	</div>
 	
 	{#if !isCourse}

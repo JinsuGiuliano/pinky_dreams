@@ -1,5 +1,8 @@
+import { productT } from "./products";
+
 export const data = {
-    whatsappLink:'https://wa.link/g2772u',
+    whatsappLink: 'https://wa.link/g2772u',
+    whatsAppProduct: (product:productT)=>`https://api.whatsapp.com/send?phone=541154847054&text=Hola!%20Quisiera%20pedir%20este%20producto%20%F0%9F%98%8D%0A*${product.title}*`,
     hero: {
         parr1: {
             title: "Conviértete en una experta </br>en el arte de las uñas",

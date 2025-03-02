@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
-	import { Icons } from "$lib/icons/icons";
 	import { data } from "../../../data/data";
 
   type cursoT = {
@@ -31,21 +30,6 @@
     </div>
   </div>
 </div>
-
-<!-- <div class="py-20 min-h-screen w-full">
-  <div class='flex flex-col items-start justify-center'>
-      <a class="text-4xl px-6 uppercase font-thin">
-       Mis Creaciones
-    </a>
-  </div>
-  <div class="p-4 w-full">
-    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> 
-      {#each data.posts as post}
-            {@html post}
-      {/each}
-    </div>
-  </div>
-</div> -->
 
 <div class="hero bg-base-200 min-h-screen w-full">
   <div class="hero-content flex-col lg:flex-row">
@@ -113,8 +97,7 @@
           </div>
         <div class="flex items-center justify-between pt-1 gap-1">
           <button class="btn rounded-md w-1/2" on:click={()=>showCurso = null}>volver</button>
-          <button class="btn btn-primary rounded-md  w-1/2" on:click={()=>goto(data.whatsappLink)}>
-            <!-- {@html Icons.whatsapp("#63263B")} -->
+          <button class="btn btn-primary rounded-md  w-1/2" on:click={()=>window.open(data.whatsappLink, "_blank")}>
             Quiero Inscribirme 
           </button>
         </div>
