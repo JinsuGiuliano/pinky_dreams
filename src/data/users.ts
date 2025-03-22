@@ -36,5 +36,11 @@ export const users: User[] = [
         name: 'Katherina Prada',
         email: 'katyprada17@gmail.com',
         password: 'katherineprada'
+    },
+    {
+        id: 6,
+        name: 'Jimena Ortiz',
+        email: 'jimenaortizocampo85@gmail.com',
+        password: 'jimenaortiz'
     }
 ]
