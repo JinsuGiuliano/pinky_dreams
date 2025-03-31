@@ -91,12 +91,45 @@ const elementsVideos: videoT[] = [
 const practicalVideos: videoT[] = [
     {
         id: 1,
-        title: "Parte Práctica - Parte 1 ",
+        title: "Práctica A",
         description: "",
         iFrame: `<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qUMM2Ty6VhQ?si=XzJKah9FGt7X9Qtl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 `,
         image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
-    }
+    },
+    {
+        id: 2,
+        title: "Práctica B - Paso 1 - Cutícula",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/DFF8_fszPWI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 3,
+        title: "Práctica B - Paso 2 - Base",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/n3Ss_ZnHqLw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 4,
+        title: "Práctica B - Paso 3 - Kapping",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/WmPkOQvlkHg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 5,
+        title: "Práctica B - Paso 4 - Top Gel",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/yEvMVqhWZl8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+
 ]
 
 export const categories: CategoriesT[] = [
