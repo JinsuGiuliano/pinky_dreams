@@ -3,6 +3,7 @@ export type User = {
     name: string;
     email: string;
     password: string;
+    date?: string;
 }
 
 
@@ -14,7 +15,7 @@ export const users: User[] = [
         password: 'test'
     },
     {
-        id: 1,
+        id: 2,
         name: 'yumiAlvez',
         email: 'yumiAlvez',
         password: 'yumiAlvez123!'

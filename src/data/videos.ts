@@ -129,6 +129,55 @@ const practicalVideos: videoT[] = [
 `,
         image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
     },
+    {
+        id: 6,
+        title: "Práctica C - Paso 1 - Service",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/OK93h2PvrcE" title="Práctica C - Paso 1 - Service" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 7,
+        title: "Práctica C - Paso 2 - Empuje de Cutícula",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/DG2GqF94zY0" title="Practica C - Paso 2 - Empuje de Cutícula" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 8,
+        title: "Práctica C - Paso 3 - Manicuría Express",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/LaayzmtBE4A" title="Practica C - Paso 3 - Manicuría Express" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 9,
+        title: "Práctica C - Paso 4 - Limado",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/q0NBUd-BEHE" title="Práctica C - Paso 4 - Limado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 10,
+        title: "Práctica C - Paso 5 - Corte de Cutícula",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/FR8AT2MbAN4" title="Práctica C - Paso 5 - Corte de Cutícula" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 11,
+        title: "Práctica C - Paso 6 - Pulido de la piel",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/9ohLm18Jq_8" title="Práctica C - Paso 6 - Pulido de la piel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 13,
+        title: "Práctica C - Paso 7 - Aplicación de la base",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/yWZImeaTEgE" title="Práctica C - Paso 7 - Aplicación de la base" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
 
 ]
 
