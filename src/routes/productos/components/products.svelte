@@ -2,8 +2,6 @@
 	import Product from "./product.svelte";
     import { allCategories, productT } from "../../../data/products";
 	import { data } from "../../../data/data";
-	import { goto } from "$app/navigation";
-	import { Icons } from "$lib/icons/icons";
 
     let showModal = false
     let selectedProduct:productT = {} as productT;
