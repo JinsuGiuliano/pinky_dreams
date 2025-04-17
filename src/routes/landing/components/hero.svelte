@@ -36,6 +36,7 @@
   <div class="hero-content flex-col lg:flex-row">
     <div class="flex flex-col">
       <img
+        alt="Abigail Montero"
         src={data.hero.parr2.img2}
         class="max-w-xs rounded-lg shadow-2xl" />
     </div>
@@ -50,7 +51,9 @@
 
 <div class="py-20 min-h-screen w-full">
   <div class='flex flex-col items-start justify-center'>
-      <a class="text-4xl px-6 uppercase font-thin">
+      <a
+      href="/#"
+      class="text-4xl px-6 uppercase font-thin">
         Nuestros Cursos
     </a>
   </div>

@@ -5,7 +5,9 @@
 </script>
 <div class="w-full px-2 py-4">
     <div class='flex flex-col items-center justify-center'>
-      <a class="text-2xl uppercase font-bold">
+      <a 
+      href="/#"
+      class="text-2xl uppercase font-bold">
         Academia Pinky Dreams
       </a>
     </div>
