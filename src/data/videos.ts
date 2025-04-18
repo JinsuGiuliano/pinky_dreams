@@ -178,9 +178,24 @@ const practicalVideos: videoT[] = [
         iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/yWZImeaTEgE" title="Práctica C - Paso 7 - Aplicación de la base" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
     },
-
+    {
+        id: 14,
+        title: "Práctica C - Paso 8 - Nivelación con Gel",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NCiy6RKeMAg" title="Práctica C - Paso 8 - Nivelación con Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 15,
+        title: "Práctica C - Paso 9 - Top Gel",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/pPglZSW_sjY" title="Práctica C - Paso 9 - Top Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
 ]
 
+// <iframe width="1206" height="678" src="https://www.youtube.com/embed/NCiy6RKeMAg" title="Práctica C - Paso 8 - Nivelación del  Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+// <iframe width="1206" height="678" src="https://www.youtube.com/embed/pPglZSW_sjY" title="Práctica C - Paso 9 - Top Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 export const categories: CategoriesT[] = [
     {
         id: 1,
