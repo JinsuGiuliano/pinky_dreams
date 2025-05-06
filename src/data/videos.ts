@@ -192,10 +192,108 @@ const practicalVideos: videoT[] = [
         iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/pPglZSW_sjY" title="Práctica C - Paso 9 - Top Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
     },
+    {
+        id: 16,
+        title: "Práctica D - Paso 1 - Preparación repuje cutícula",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/Mjt-iKNEwo0" title="Práctica D - Part 1 - Preparación repuje cutícula" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 17,
+        title: "Práctica D - Paso 2 - Levantamiento de cutícula",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/Shn5zEVYONs" title="Práctica D - Paso 2 - Levantamiento de cutícula" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 18,
+        title: "Práctica D - Paso 3 - Corte de cutícula",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/tqQmCiKK0UY" title="Práctica D - Paso 3 - Corte cuticula" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 19,
+        title: "Práctica D - Paso 4 - Limado",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/6eVfFmPlS7g" title="Práctica D - Paso 4 - Limado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 20,
+        title: "Práctica D - Paso 5 - Pulido de piel",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/loIuj_fHUIY" title="Práctica D - Paso 5 - Pulido de la piel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 21,
+        title: "Práctica D - Paso 6 - Preparadores",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/FC7f8hXgoxU" title="Práctica D - Paso 6 - Preparadores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 22,
+        title: "Práctica D - Paso 7 - Base Coat",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/Et8HrkcOfsA" title="Práctica D - Paso 7 - Base Coat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 23,
+        title: "Práctica D - Paso 8 - Aplicación Gel Rubber",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/4V3yT-v4_1A" title="Práctica D - Paso 8 - Aplicación Gel Rubber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 24,
+        title: "Practica D - Paso 9 - Esmaltado Perfecto",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/EAaAw2xWURo" title="Practica D - Paso 9 - Esmaltado Perfecto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 25,
+        title: "Práctica D - Paso 10 - Aplicación Top Coat",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/5h5UW-tYLqY" title="Práctica D - Paso 10 - Aplicación Top Coat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 26,
+        title: "Práctica D - Paso 11 - Hidratación",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/xjOD4tWKKF0" title="Práctica D - Paso 11 - Hidratación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 27,
+        title: "Práctica D - Paso 12 - Decoración",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/l8U7MwPbksg" title="Práctica D - Paso 12 - Decoración" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 28,
+        title: "Práctica D - Paso 13 - Encapsulado",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/evYT7aGK82M" title="Práctica D - Paso 13 - Encapsulado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
+    {
+        id: 29,
+        title: "Práctica D - Paso 14 - Sellado",
+        description: "",
+        iFrame: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/8snm6GwRSG4" title="Práctica D - Paso 14 - Sellado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+    },
 ]
 
-// <iframe width="1206" height="678" src="https://www.youtube.com/embed/NCiy6RKeMAg" title="Práctica C - Paso 8 - Nivelación del  Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-// <iframe width="1206" height="678" src="https://www.youtube.com/embed/pPglZSW_sjY" title="Práctica C - Paso 9 - Top Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+// <iframe  width="560" height="315" src="https://www.youtube.com/embed/NCiy6RKeMAg" title="Práctica C - Paso 8 - Nivelación del  Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+// <iframe  width="560" height="315" src="https://www.youtube.com/embed/pPglZSW_sjY" title="Práctica C - Paso 9 - Top Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 export const categories: CategoriesT[] = [
     {
         id: 1,
