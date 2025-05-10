@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { CurrentUser } from "$lib/icons/store";
   import { users } from "../../data/users";
 
 
@@ -10,7 +11,7 @@
     if(user){
         window.location.href = '/cursos';
         localStorage.setItem('user', JSON.stringify(user))
-    
+        CurrentUser.set(user);
     }else{
       alert('Usuario o contraseña incorrectos');
     }

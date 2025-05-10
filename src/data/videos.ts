@@ -292,6 +292,44 @@ const practicalVideos: videoT[] = [
     },
 ]
 
+export const softGelNailsVideos: videoT[] = [
+    {
+        id: 1,
+        title: "1 introducción. Lista de materiales",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/4BIUsJOExmY" title="1 introduccion. Lista de materiales." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    },
+    {
+        id: 2,
+        title: "2 Anatomia de la uña. Enfermedades más comunes",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/avgkOXvLxQ8" title="2 Anatomia de la uña. Enfermedades más comunes." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    },
+    {
+        id: 3,
+        title: "3 Adaptación del tips de Soft gel. Cómo seleccionar los tips.",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NyirpurPTBM" title="3 Adaptación del tips de Soft gel. Cómo seleccionar los tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    },
+    {
+        id: 4,
+        title: "4 Práctica. Manicuría Tradicional y combinada",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/OGbWqupbx78" title="4 Práctica. Manicuria Tradicional y combinada." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    },
+    {
+        id: 5,
+        title: "5 Aplicación de los tips de Soft gel con base gel",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/N5vHE1vmNBQ" title="5 Aplicación de los tips de Soft gel., con base gel." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    },
+]
+
 // <iframe  width="560" height="315" src="https://www.youtube.com/embed/NCiy6RKeMAg" title="Práctica C - Paso 8 - Nivelación del  Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 // <iframe  width="560" height="315" src="https://www.youtube.com/embed/pPglZSW_sjY" title="Práctica C - Paso 9 - Top Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 export const categories: CategoriesT[] = [
@@ -308,6 +346,11 @@ export const categories: CategoriesT[] = [
     {
         id: 3,
         title: "Parte Práctica",
-        videos: practicalVideos
+        videos: practicalVideos,
+    },
+    {
+        id: 4,
+        title: "Cursos Soft Gel Nails",
+        videos: softGelNailsVideos
     }
 ]
