@@ -1,12 +1,20 @@
 <script>
 	import { goto } from "$app/navigation";
 
-
 	import { Icons } from "$lib/icons/icons";
 	import { data } from "../../../data/data";
-
+	import { createEventDispatcher } from "svelte";
+	
 	export let isCourse = false
 	export let isProduct = false
+ 
+	let dispatch = createEventDispatcher();
+
+	function logout(){
+		dispatch('logout')
+	}
+	// make this function logout
+
 </script>
 <div class="navbar bg-base-100 fixed top-0 z-40 ">
 	<div class="navbar-start">
@@ -39,6 +47,16 @@
 		>
 			{@html Icons.whatsapp("#63263B")}
 			Quiero Inscribirme 
+		</div>
+		</div>
+	{:else}
+	<div class="navbar-end">
+		<div class="btn fixed bottom-2 lg:bottom-none lg:top-2 shadow-md" 
+		on:keypress
+		on:click={logout}
+		>
+			{@html Icons.logout()}
+			Salir 
 		</div>
 		</div>
 	{/if}
