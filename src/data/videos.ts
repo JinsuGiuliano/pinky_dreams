@@ -330,6 +330,38 @@ export const softGelNailsVideos: videoT[] = [
     },
 ]
 
+
+export const nailArtVideos: videoT[] = [
+        {
+        id: 1,
+        title: "Nail Art parte 1",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/fWGeKi6htzQ" title="Nail Art parte 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    },
+    {
+        id: 2,
+        title: "Nail Art parte 2",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/W4ygaQZzsvE" title="Nail Art parte 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    },
+    {
+        id: 3,
+        title: "Nail Art parte 3",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/zVlsqLuVhjk" title="Nail Art parte 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    },
+    {
+        id: 4,
+        title: "Nail Art parte 4",
+        description: "",
+        iFrame: `<iframe width="560" height="315" src="https://www.youtube.com/embed/p5OS_uy3PAQ" title="Nail Art parte 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+    }
+]
+
 // <iframe  width="560" height="315" src="https://www.youtube.com/embed/NCiy6RKeMAg" title="Práctica C - Paso 8 - Nivelación del  Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 // <iframe  width="560" height="315" src="https://www.youtube.com/embed/pPglZSW_sjY" title="Práctica C - Paso 9 - Top Gel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 export const categories: CategoriesT[] = [
@@ -350,7 +382,12 @@ export const categories: CategoriesT[] = [
     },
     {
         id: 4,
-        title: "Cursos Soft Gel Nails",
+        title: "Soft Gel Nails",
         videos: softGelNailsVideos
+    },
+    {
+        id: 5,
+        title: "Cursos Nail Art",
+        videos: nailArtVideos
     }
 ]

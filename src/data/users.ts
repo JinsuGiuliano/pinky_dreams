@@ -14,7 +14,7 @@ export const users: User[] = [
         name: 'test',
         email: 'test@test.com',
         password: 'test',
-        cursos: [1, 2, 3]
+        cursos: [1, 2, 3, 4, 5]
     },
     {
         id: 2,
@@ -85,5 +85,12 @@ export const users: User[] = [
         email: 'irinachura2022@gmail.com',
         password: 'irinachura2022',
         cursos: [1, 2, 3]
+    },
+    {
+        id: 12,
+        name: 'Nails Art',
+        email: 'nailArt@pinkydreams.com',
+        password: 'nailArt2025',
+        cursos: [5]
     }
 ]
