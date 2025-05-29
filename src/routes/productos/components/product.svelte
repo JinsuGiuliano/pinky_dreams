@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from "svelte";
 	import type { productT } from "../../../data/products";
-	import { pagos } from "../../../data/data";
  
   let dispatch = createEventDispatcher();
 
@@ -32,6 +31,5 @@
       <p class="truncate">{@html product.description}</p>
       <p class="text-md font-thin">Stock: {product.stock}</p>
       <p class="text-md font-thin px-2 py-1 bg-pink-600 text-purple-100 w-fit rounded-md uppercase">{product.category}</p>
-      {@html pagos.botonLinkPago}
     </div>
   </div>
