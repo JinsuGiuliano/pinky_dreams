@@ -1,19 +1,41 @@
 <script lang="ts">
-	import { goto } from "$app/navigation";
 	import { Icons } from "$lib/icons/icons";
+	import { onMount } from "svelte";
+	import type { Curso } from "../../../data/cursos";
 	import { data } from "../../../data/data";
 
-  type cursoT = {
-      title: string;
-      image: string;
-      available: boolean;
-      description: string;
+
+  let showCurso: Curso | null = null;
+  let showPreview: Curso | null = null;
+  let payButtonPressed = 0;
+
+  onMount(() => {
+    const p = localStorage.getItem('payButtonPressed');
+    if (p) {
+      payButtonPressed = JSON.parse(p);
+    }
+  });
+
+  function openPayLink(curso: Curso) {
+    window.open(curso.linkPago, "_blank");
+    payButtonPressed = curso.ID;
+    localStorage.setItem('payButtonPressed', JSON.stringify(payButtonPressed));
   }
 
-  let showCurso: cursoT | null = null;
-
-  function showCursoModal(curso:cursoT){
+  function showCursoModal(curso:Curso){
     showCurso = curso
+  }
+
+  function hidePreviewModal(){
+    showPreview = null
+  }
+
+  function openLink(curso:Curso){
+    window.open(curso.linkPago, "_blank")
+  }
+
+  function openPagoRealizado(curso:Curso){
+    window.open(curso.linkPagoRealizado, "_blank")
   }
 
 </script>
@@ -79,19 +101,37 @@
                     <input type="radio" name="my-accordion" />
                     
                       <div class="collapse-title font-semibold">
-                        <div class="flex items-center justify-start gap-2">
+                        <div class="flex items-center justify-start gap-2 text-lg font-thin">
                           + Más información del curso
-                          <div>
-                            {@html Icons.graduated("#000000")}
-                          </div>
                         </div>
                     </div>
                     <div class="collapse-content text-sm py-0">{@html curso.description}</div>
                    
                   </div>
-                    <button class="btn btn-primary rounded-md  w-full" on:click={()=>window.open(data.whatsappLink, "_blank")}>
-                      Quiero Inscribirme 
+                    <button 
+                      class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
+                      on:click={()=>showPreview = curso}>
+                       <div class="w-full flex items-center justify-between gap-2">
+                        <div>{@html Icons.mercadoPago()}</div> 
+                        <div class="text-2xl font-thin">${curso.precio}</div>
+                      </div>
                     </button>
+                    {#if payButtonPressed == curso.ID}
+                      <button class="btn w-full bg-green-600/10 hover:bg-green-600/20 border-[1px] border-green-600 hover:border-green-600 text-green-600 rounded-md" 
+                        on:click={()=>openPagoRealizado(curso)}>
+                        <div class="w-full flex items-center justify-start gap-2">
+                          <div>{@html Icons.whatsapp('#16a34a', 20)}</div>
+                          <div>Notificar pago via whatsapp</div>
+                        </div>
+                      </button>
+                    {:else}
+                      <button class="btn w-full bg-green-600/10 hover:bg-green-600/20 border-[1px] border-green-600 hover:border-green-600 text-green-600 rounded-md" on:click={()=>window.open(data.whatsappLink, "_blank")}>
+                        <div class="w-full flex items-center justify-start gap-2">
+                        <div>{@html Icons.whatsapp("#16a34a", 20)}</div>
+                        <div>Contáctanos</div>
+                        </div>
+                      </button>
+                    {/if}
                 </div>
               </div>
       {/each}
@@ -119,10 +159,58 @@
           </div>
         <div class="flex items-center justify-between pt-1 gap-1">
           <button class="btn rounded-md w-1/2" on:click={()=>showCurso = null}>volver</button>
-          <button class="btn btn-primary rounded-md  w-1/2" on:click={()=>window.open(data.whatsappLink, "_blank")}>
-            Quiero Inscribirme 
-          </button>
+        <button 
+          class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
+          on:click={()=>openLink(showCurso)}>
+            <div class="w-full flex items-center justify-between gap-2">
+            <div>{@html Icons.mercadoPago()}</div> 
+            <div class="text-2xl font-thin">${showCurso.precio}</div>
+          </div>
+        </button>
+          
         </div>
+      </div>
+    </div>
+  </div>
+{/if}
+
+
+{#if showPreview != null}
+ <div class="modal modal-open">
+    <div class="modal-box px-0 py-0 rounded-xl w-[90%] lg:min-w-[600px] border-2 border-pink-600/20">
+      <div class="modal-header text-center bg-pink-600/20">  
+        <div class="text-3xl py-2 font-thin">{showPreview.title}</div>
+       
+      </div>
+      <div class="modal-body">
+        <div class="flex flex-col lg:flex-row items-start justify-between p-2">
+          <div class="w-full text-start p-2 italic">
+            <h1 class="text-2xl font-bold">Aviso importante</h1>
+            <h2 class="text-lg font-thin">Luego de realizar el pago,</h2>  
+            <h2 class="text-lg font-thin">envía el comprobante a nuestro WhatsApp</h2>
+          </div>
+          <div class="divider divider-horizontal"/>
+        <div class="flex w-full flex-col items-center justify-end pt-1 gap-1">
+          <button 
+            class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
+            on:click={()=>openPayLink(showPreview)}>
+              <div class="w-full flex items-center justify-between gap-1">
+              <div>Comprar</div> 
+              <div class="text-2xl font-thin">${showPreview.precio}</div>
+            </div>
+          </button>
+          {#if payButtonPressed == showPreview.ID}
+            <button class="btn w-full bg-green-600/10 hover:bg-green-600/20 border-[1px] border-green-600 hover:border-green-600 text-green-600 rounded-md" 
+              on:click={()=>openPagoRealizado(showPreview)}>
+              <div class="w-full flex items-center justify-start gap-1">
+                <div>{@html Icons.whatsapp('#16a34a', 20)}</div>
+                <div>Notificar pago via whatsapp</div>
+              </div>
+            </button>
+          {/if}
+          <button class="btn rounded-md w-full" on:click={hidePreviewModal}>volver</button>
+        </div>
+      </div>
       </div>
     </div>
   </div>

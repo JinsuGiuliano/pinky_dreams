@@ -46,7 +46,7 @@
 		  }}
 		>
 			{@html Icons.whatsapp("#63263B")}
-			Quiero Inscribirme 
+			Contáctanos
 		</div>
 		</div>
 	{:else}
