@@ -28,7 +28,7 @@ export let cursos: Curso[] = [
     {
         ID:1,
         title: "Curso Online de Kapping en Gel",
-        image: "/images/cursos/NailArt_TecnicasMixtas.jpeg",
+        image: "/images/cursos/KappingEnGel_ManicuríaRusa.jpeg",
         available: true,
         linkPago: linksCursos.KappingGel.pago,
         linkPagoRealizado: linksCursos.KappingGel.realizado,
