@@ -24,8 +24,6 @@
 		}, 1800000); // 30 minutes
 	}
 	
-
-
 	function logout(){
 		localStorage.removeItem('user');
 		window.location.href = '/ingresar';

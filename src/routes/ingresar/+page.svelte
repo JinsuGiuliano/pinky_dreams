@@ -1,13 +1,19 @@
 <script lang="ts">
-	import { CurrentUser } from "$lib/icons/store";
-  import { users } from "../../data/users";
+	import { loadUsers } from "$lib/resources";
+	import { CurrentUser } from "$lib/store";
+	import { UsersStore } from "$lib/store";
+	import { onMount } from "svelte";
 
 
   let userName:string = '';
   let password:string = '';
 
+  onMount(()=>{
+    loadUsers()
+  })
+
   function login(){
-    const user = users.find(user=>user.email === userName && user.password === password);
+    const user = $UsersStore.find(user=>user.email === userName && user.password === password);
     if(user){
         window.location.href = '/cursos';
         localStorage.setItem('user', JSON.stringify(user))

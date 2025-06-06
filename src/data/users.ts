@@ -5,8 +5,8 @@ export type User = {
     password: string;
     date?: string;
     cursos?: number[];
+    enabled?: boolean;
 }
-
 
 export const users: User[] = [
     {
@@ -54,7 +54,7 @@ export const users: User[] = [
     {
         id: 7,
         name: 'Keren Noelia',
-        email: 'K.arenoelia5@gmail.com',
+        email: 'k.arenoelia5@gmail.com',
         password: 'karennoelia',
         cursos: [1, 2, 3]
     },

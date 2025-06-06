@@ -3,6 +3,8 @@
 	import { onMount } from "svelte";
 	import type { Curso } from "../../../data/cursos";
 	import { data } from "../../../data/data";
+	import { loadCourses } from "$lib/resources";
+	import { CourseStore } from "$lib/store";
 
 
   let showCurso: Curso | null = null;
@@ -14,6 +16,9 @@
     if (p) {
       payButtonPressed = JSON.parse(p);
     }
+
+
+		loadCourses();
   });
 
   function openPayLink(curso: Curso) {
@@ -81,7 +86,7 @@
   </div>
   <div class="p-4 w-full">
     <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> 
-      {#each data.cursos as curso, i}
+      {#each $CourseStore as curso, i}
             <div 
             class="cursor-pointer card card-compact bg-base-100 max-w-sm shadow-xl {curso.available?"":"disabled grayscale"}">
               <figure 
