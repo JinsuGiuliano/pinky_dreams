@@ -101,7 +101,7 @@ export function loadCourses() {
 }
 
 function extractIDfromGoogleDriveImageURL(url: string) {
-    let formated = `https://drive.google.com/uc?id=`
+    let formated = `https://drive.google.com/thumbnail?id=`
     const regex = /\/d\/([^/]+)\/view\?usp=sharing/;
     const match = url.match(regex);
     return match ? formated + match[1] : url;
