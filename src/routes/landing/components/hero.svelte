@@ -113,15 +113,17 @@
                     <div class="collapse-content text-sm py-0">{@html curso.description}</div>
                    
                   </div>
-                    <button 
-                      class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
-                      on:click={()=>showPreview = curso}>
-                       <div class="w-full flex items-center justify-between gap-2">
-                        <div>{@html Icons.mercadoPago()}</div> 
-                        <div class="text-2xl font-thin">${curso.precio}</div>
-                      </div>
-                    </button>
-                    {#if payButtonPressed == curso.ID}
+                    {#if curso.linkPago != ""}
+                      <button 
+                        class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
+                        on:click={()=>showPreview = curso}>
+                        <div class="w-full flex items-center justify-between gap-2">
+                          <div>{@html Icons.mercadoPago()}</div> 
+                          <div class="text-2xl font-thin">${curso.precio}</div>
+                        </div>
+                      </button>
+                    {/if}
+                    {#if !curso.linkPagoRealizado && curso.linkPagoRealizado != "" && payButtonPressed == curso.ID}
                       <button class="btn w-full bg-green-600/10 hover:bg-green-600/20 border-[1px] border-green-600 hover:border-green-600 text-green-600 rounded-md" 
                         on:click={()=>openPagoRealizado(curso)}>
                         <div class="w-full flex items-center justify-start gap-2">
