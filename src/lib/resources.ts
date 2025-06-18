@@ -80,8 +80,7 @@ export function loadCourses() {
 
         const data = await response.json();
         let cursos: Curso[] = data.values.map((row) => {
-            let imgURL = extractIDfromGoogleDriveImageURL(row[2])
-            console.log("imgURL:", imgURL)
+            let imgURL = extractIDfromGoogleDriveImageURL(row[2]);
             return {
                 ID: row[0],
                 title: row[1],
@@ -102,7 +101,7 @@ export function loadCourses() {
 }
 
 function extractIDfromGoogleDriveImageURL(url: string) {
-    let formated = `https://drive.google.com/thumbnail?id=`
+    let formated = `https://drive.google.com/uc?id=`
     const regex = /\/d\/([^/]+)\/view\?usp=sharing/;
     const match = url.match(regex);
     return match ? formated + match[1] : url;
