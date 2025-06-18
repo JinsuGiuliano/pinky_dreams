@@ -84,7 +84,7 @@ export function loadCourses() {
             return {
                 ID: row[0],
                 title: row[1],
-                image: row[2],
+                image: imgURL,
                 precio: row[3],
                 description: row[4],
                 linkPago: row[5],
