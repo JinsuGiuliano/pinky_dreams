@@ -98,6 +98,7 @@
               >
                   <img
                     src={curso.image}
+                    class="w-full"
                     alt="Album" /> 
                 </figure>
                 <div class="card-body">
@@ -155,6 +156,7 @@
       <div class="modal-body">
         <img
           src={showCurso.image}
+          class="w-full"
           alt="Album" /> 
           <div class="flex justify-between">
             <div class="w-full p-2">
@@ -165,16 +167,17 @@
           <span>{@html showCurso.description}</span>
           </div>
         <div class="flex items-center justify-between pt-1 gap-1">
-          <button class="btn rounded-md w-1/2" on:click={()=>showCurso = null}>volver</button>
-        <button 
-          class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
-          on:click={()=>openLink(showCurso)}>
-            <div class="w-full flex items-center justify-between gap-2">
-            <div>{@html Icons.mercadoPago()}</div> 
-            <div class="text-2xl font-thin">${showCurso.precio}</div>
-          </div>
-        </button>
-          
+          <button class="btn rounded-md {showCurso.linkPago?'w-1/2':'w-full'}" on:click={()=>showCurso = null}>volver</button>
+          {#if showCurso.linkPago != ""}
+              <button 
+                class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
+                on:click={()=>openLink(showCurso)}>
+                  <div class="w-full flex items-center justify-between gap-2">
+                  <div>{@html Icons.mercadoPago()}</div> 
+                  <div class="text-2xl font-thin">${showCurso.precio}</div>
+                </div>
+              </button>
+            {/if}
         </div>
       </div>
     </div>
@@ -187,7 +190,6 @@
     <div class="modal-box px-0 py-0 rounded-xl w-[90%] lg:min-w-[600px] border-2 border-pink-600/20">
       <div class="modal-header text-center bg-pink-600/20">  
         <div class="text-3xl py-2 font-thin">{showPreview.title}</div>
-       
       </div>
       <div class="modal-body">
         <div class="flex flex-col lg:flex-row items-start justify-between p-2">
@@ -198,15 +200,17 @@
           </div>
           <div class="divider divider-horizontal"/>
         <div class="flex w-full flex-col items-center justify-end pt-1 gap-1">
-          <button 
-            class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
-            on:click={()=>openPayLink(showPreview)}>
-              <div class="w-full flex items-center justify-between gap-1">
-              <div>Comprar</div> 
-              <div class="text-2xl font-thin">${showPreview.precio}</div>
-            </div>
-          </button>
-          {#if payButtonPressed == showPreview.ID}
+          {#if showPreview.linkPago != ""}
+            <button 
+              class="btn w-full bg-blue-600/10 hover:bg-blue-600/30 rounded-md border-[1px] hover:border-blue-600 border-blue-600 text-blue-600" 
+              on:click={()=>openPayLink(showPreview)}>
+                <div class="w-full flex items-center justify-between gap-1">
+                <div>Comprar</div> 
+                <div class="text-2xl font-thin">${showPreview.precio}</div>
+              </div>
+            </button>
+          {/if}
+          {#if showPreview && showPreview.linkPagoRealizado != "" && payButtonPressed == showPreview.ID}
             <button class="btn w-full bg-green-600/10 hover:bg-green-600/20 border-[1px] border-green-600 hover:border-green-600 text-green-600 rounded-md" 
               on:click={()=>openPagoRealizado(showPreview)}>
               <div class="w-full flex items-center justify-start gap-1">
